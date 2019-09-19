@@ -5,6 +5,11 @@ load(
     container_repositories = "repositories"
 )
 
+# Requires io_bazel_rules_docker to exist
+load(
+    "@io_bazel_rules_docker//repositories:repositories.bzl",
+    container_repositories = "repositories"
+)
 
 # WORKSPACE repository macro to load dependencies to use pyz_image
 def pyz_image_repositories():
